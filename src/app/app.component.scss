@@ -22,21 +22,16 @@
   }
 }
 
+footer {
+  background-color: #333;
+  color: #fff;
+  text-align: center;
+  padding: 10px;
+  position: fixed;
+  bottom: 0;
+  width: 100%;
+}
+
 .container {
-  text-align: center; // Centra el contenido dentro del contenedor
-}
-
-.slider {
-  display: flex;
-  justify-content: center; // Centra los elementos horizontalmente
-  align-items: center; // Centra los elementos verticalmente
-}
-
-.slide {
-  margin: 0 10px; // Ajusta el espacio entre los slides según sea necesario
-}
-
-img {
-  max-width: 100%; // Asegura que las imágenes no se salgan del contenedor
-  height: auto;
+  text-align: center;
 }

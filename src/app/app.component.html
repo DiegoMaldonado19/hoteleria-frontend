@@ -3,24 +3,25 @@
     <div>
       <nav>
         <ul>
-          <li><a routerLink="/">Inicio</a></li>
-          <li><a (click)="redirect()">Iniciar Sesión</a></li>
-          <li><a routerLink="/register">Registrarse</a></li>
+          <div>
+            <li><a routerLink="/">Inicio</a></li>
+          </div>
+        </ul>
+        <ul>
+          <div>
+            <li><a routerLink="/login">Iniciar Sesión</a></li>
+          </div>
+        </ul>
+        <ul>
+          <div>
+            <li><a routerLink="/register">Registrarse</a></li>
+          </div>
         </ul>
       </nav>
     </div>
   </div>
 </nav>
-<div class="container">
-  <div class="slider">
-    <div class="slide">
-      <img src="./assets/images/hotel.jpg" alt="Imagen 1">
-    </div>
-    <div class="slide">
-      <img src="./assets/images/room.jpg" alt="Imagen 2">
-    </div>
-    <div class="slide">
-      <img src="./assets/images/pool.jpg" alt="Imagen 3">
-    </div>
-  </div>
-</div>
+<router-outlet></router-outlet>
+<footer>
+  <p>&copy; 2023 Mi Página. Todos los derechos reservados.</p>
+</footer>
