@@ -9,4 +9,4 @@ export interface Transaction {
 }
 
 
-export interface CreateTransactionrDTO extends Omit<Transaction, 'id' | 'updated_at' | 'created_at'> { }
+export interface CreateTransactionDTO extends Omit<Transaction, 'id' | 'updated_at' | 'created_at'> { }

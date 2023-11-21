@@ -1,11 +1,11 @@
 import { Injectable } from '@angular/core';
 import { HttpClient } from '@angular/common/http';
-import { User, CreateUserDTO } from '../models/user.model';
+import { Room, CreateRoomDTO } from '../models/room.model';
 
 @Injectable({
   providedIn: 'root'
 })
-export class UserService {
+export class RoomService {
 
   private apiUrl = 'http://127.0.0.1:8000/api/v1';
 
@@ -13,11 +13,11 @@ export class UserService {
     private http: HttpClient
   ) { }
 
-  create(dto: CreateUserDTO){
-    return this.http.post<User>(`${this.apiUrl}/user`, dto);
+  create(dto: CreateRoomDTO){
+    return this.http.post<Room>(`${this.apiUrl}/room`, dto);
   }
 
   getAll(){
-    return this.http.get<User[]>(`${this.apiUrl}/user`);
+    return this.http.get<Room[]>(`${this.apiUrl}/room`);
   }
 }
