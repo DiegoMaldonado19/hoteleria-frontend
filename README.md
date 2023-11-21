@@ -1,27 +1,59 @@
-# FrontendApp
+# Proyecto Final - Hoteleria - Frontend
 
-This project was generated with [Angular CLI](https://github.com/angular/angular-cli) version 16.2.7.
+## Descripción:
 
-## Development server
+Aplicación creada con la finalidad de poder consumir una REST API construida con Laravel.
 
-Run `ng serve` for a dev server. Navigate to `http://localhost:4200/`. The application will automatically reload if you change any of the source files.
+La cual provee de datos a la aplicación, para que podemos renderizar los datos.
 
-## Code scaffolding
+De esta manera podemos presentar una interfaz amigable al usuario.
 
-Run `ng generate component component-name` to generate a new component. You can also use `ng generate directive|pipe|service|class|guard|interface|enum|module`.
+En resumen, es una interfaz gráfica para la renderización de datos provenientes de una REST API, la cual tiene sus endpoints que nosotros consumimos.
 
-## Build
+## Técnologias:
 
-Run `ng build` to build the project. The build artifacts will be stored in the `dist/` directory.
+* Angular, version 16.2.10
 
-## Running unit tests
+<img src="https://logowik.com/content/uploads/images/angular9826.logowik.com.webp" width="300"/>
 
-Run `ng test` to execute the unit tests via [Karma](https://karma-runner.github.io).
 
-## Running end-to-end tests
+* Node, version 18.18.2
 
-Run `ng e2e` to execute the end-to-end tests via a platform of your choice. To use this command, you need to first add a package that implements end-to-end testing capabilities.
+<img src="https://upload.wikimedia.org/wikipedia/commons/thumb/d/d9/Node.js_logo.svg/2560px-Node.js_logo.svg.png" width="300"/>
 
-## Further help
+## Descripción Tecnologias:
 
-To get more help on the Angular CLI use `ng help` or go check out the [Angular CLI Overview and Command Reference](https://angular.io/cli) page.
+* Angular Framework:
+
+Se utilizó por su facilidad para poder crear interfaces interactivas y por sus poderosas herramientas para poder consumir distintos endpoints.
+
+* Node: 
+
+Su función principal es la gestión de paquetes, con esta herramienta, podremos añadir distintos paquetes para poder hacer más robusta nuestra aplicacion y poder añadir más funcionalidades.
+
+## Servicios que consumen endpoints:
+
+La aplicación cuenta con los siguientes endpoints que pueden realizar peticiones a las siguientes rutas de una REST API:
+
+* v1/employee
+* v1/employee-role
+* v1/reservation
+* v1/room
+* v1/room-type
+* v1/task
+* v1/transaction
+* v1/transaction-type
+* v1/user
+* v1/user-role
+
+Estos servicios nos sirven para traer los distintos datos que necesitemos.
+
+Para poder recibir correctamente los datos, se crearon interfaces para poder manejar los datos provenientes de la REST API.
+
+## Comando para iniciar proyecto:
+
+* ng serve -o
+
+Con este comando iniciaran el servidor de Angular, que corre en el siguiente enlace: http://localhost:4200/
+
+Con la flag "-o" su navegador abrira la app en cuanto este disponible.
