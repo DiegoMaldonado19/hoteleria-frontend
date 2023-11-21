@@ -1,0 +1,42 @@
+.show-pc {
+  display: true;
+  box-shadow: 0px 2px 5px rgb(black, .2);
+  > div {
+    padding: 1em;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+  }
+  nav {
+    display: flex;
+    align-items: center;
+    ul {
+      display: flex;
+      list-style: none;
+      a {
+        margin: 0 .2em;
+        color: inherit;
+        text-decoration: none;
+      }
+    }
+  }
+}
+
+.container {
+  text-align: center; // Centra el contenido dentro del contenedor
+}
+
+.slider {
+  display: flex;
+  justify-content: center; // Centra los elementos horizontalmente
+  align-items: center; // Centra los elementos verticalmente
+}
+
+.slide {
+  margin: 0 10px; // Ajusta el espacio entre los slides según sea necesario
+}
+
+img {
+  max-width: 100%; // Asegura que las imágenes no se salgan del contenedor
+  height: auto;
+}
